@@ -2,6 +2,7 @@
 const statusDiv = document.querySelector('.status');
 const resetDiv = document.querySelector('.reset-btn');
 const cells = document.querySelectorAll('.cell');
+const scoreBoard = document.querySelectorAll('.scoreboard');
 
 // Game Constants:
 const xSymbol = '✖';
@@ -11,6 +12,8 @@ const oSymbol = '〇';
 let playGame = true;
 let turnX = true;
 let winner = null;
+let scoreX = 0;
+let scoreO = 0;
 
 // Functions:
 const letterToSymbol = (letter) => letter === 'x' ? xSymbol : oSymbol;
@@ -24,8 +27,12 @@ const handleWin = (letter) => {
 
     if (winner === 'x') {
         statusDiv.innerHTML = `${letterToSymbol(winner)} has won!`;
+        scoreX++;
+        scoreBoard.innerHTML = `${xSymbol}: ${scoreX} ${oSymbol}: ${scoreO}`;
     } else {
         statusDiv.innerHTML = `<span>${letterToSymbol(winner)} has won!</span>`;
+        scoreO++;
+        scoreBoard.innerHTML = `${xSymbol}: ${scoreX} ${oSymbol}: ${scoreO}`;
     }
 }
 
