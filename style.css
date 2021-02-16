@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+    color: #545454
+}
+
+.container {
+    background: #14BDAC;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.title {
+    text-align: center;
+}
+
+.title span {
+    color: #F2EBD3
+}
+
+.status-btn {
+    display: flex;
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 700;
+    justify-content: space-around;
+    height: 30px;
+}
+
+.status-btn span {
+    color: #F2EBD3
+}
+
+.reset-btn {
+    cursor: pointer;
+}
+
+.reset-btn:hover {
+    color: #F2EBD3
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 50px;
+    margin-left: 30px;
+    margin-right: 30px;
+    grid-gap: 15px;
+    background-color: #0DA192
+}
+
+.cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 200px;
+    background-color: #14BDAC;
+    cursor: pointer;
+}
+
+.x,
+.o {
+    cursor: auto;
+}
+
+.ended {
+    cursor: auto;
+}
+
+.x::before {
+    font-size:200px;
+    content: '×';
+}
+
+.o::before {
+    font-size: 107px;
+    font-weight: bold;
+    color: #F2EBD3;
+    content: '〇'
+}
+
+.won::before {
+    animation: blinker 0.2s linear infinite;
+}
+
+.blink::before {
+    animation: blinker 0.2s linear infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .game-grid {
+        margin-top: 25px;
+        grid-gap: 10px;
+    }
+
+    .cell {
+        height: 150px;
+        width: 150px;
+    }
+
+    .x::before {
+        font-size: 150px;
+    }
+
+    .o::before {
+        font-size: 67px;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .container {
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .cell {
+        height: 100px;
+        width: 100px;
+    }
+
+    .x::before {
+        font-size: 100px;
+    }
+
+    .o::after {
+        font-size: 175px;
+    }
+}
