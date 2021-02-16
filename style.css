@@ -31,6 +31,10 @@ body {
     margin-right: 20px;
 }
 
+.scoreboard span {
+    color: #F2EBD3;
+}
+
 .status-btn {
     display: flex;
     margin-top: 25px;
