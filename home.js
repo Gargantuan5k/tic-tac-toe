@@ -2,7 +2,7 @@
 const statusDiv = document.querySelector('.status');
 const resetDiv = document.querySelector('.reset-btn');
 const cells = document.querySelectorAll('.cell');
-const scoreBoard = document.querySelectorAll('.scoreboard');
+const scoreBoard = document.querySelector('.scoreboard');
 
 // Game Constants:
 const xSymbol = '✖';
