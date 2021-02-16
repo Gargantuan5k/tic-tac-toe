@@ -32,7 +32,7 @@ const handleWin = (letter) => {
     } else {
         statusDiv.innerHTML = `<span>${letterToSymbol(winner)} has won!</span>`;
         scoreO++;
-        scoreBoard.innerHTML = `${xSymbol}: ${scoreX} ${oSymbol}: ${scoreO}`;
+        scoreBoard.innerHTML = `${xSymbol}: ${scoreX} <span>${oSymbol}: ${scoreO}</span>`;
     }
 }
 
