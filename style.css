@@ -130,6 +130,10 @@ body {
     .o::before {
         font-size: 65px;
     }
+    
+    .scoreboard {
+        font-family: monospace;
+    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -149,5 +153,8 @@ body {
 
     .o::after {
         font-size: 175px;
+    }
+    .scoreboard {
+        font-family: monospace;
     }
 }
