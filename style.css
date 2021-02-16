@@ -90,11 +90,11 @@ body {
 }
 
 .won::before {
-    animation: blinker 0.2s linear infinite;
+    animation: blinker 1.5s linear infinite;
 }
 
 .blink::before {
-    animation: blinker 0.2s linear infinite;
+    animation: blinker 1.5s linear infinite;
 }
 
 @keyframes blinker {
