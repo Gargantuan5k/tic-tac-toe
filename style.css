@@ -115,11 +115,11 @@ body {
     }
 
     .x::before {
-        font-size: 150px;
+        font-size: 135px;
     }
 
     .o::before {
-        font-size: 67px;
+        font-size: 65px;
     }
 }
 
