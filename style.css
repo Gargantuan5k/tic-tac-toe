@@ -26,6 +26,11 @@ body {
     color: #F2EBD3
 }
 
+.scoreboard {
+    font-family: Consolas;
+    margin-right: 20px;
+}
+
 .status-btn {
     display: flex;
     margin-top: 25px;
