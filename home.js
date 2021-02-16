@@ -111,6 +111,7 @@ const handleReset = (e) => {
         cell.classList.remove('o');
         cell.classList.remove('won');
         cell.classList.remove('ended');
+        cell.classList.remove('blink');
     }
 };
 
